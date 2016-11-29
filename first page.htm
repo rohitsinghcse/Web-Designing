@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>Hello friends </title>
+		<style>
+			body{
+				color:red;
+			}
+			h1{
+				color:black;
+				font-size:60px;
+				font-family:Arial,sans-serif;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Home</h1>
+		<p>This is Yogeshwar Sharma's page. His digits are </p>
+		<button id="changeColor">Change Color </button>
+		<script>
+			document.getElementById('changeColor').onclick =changeColor;
+			var currentColor = "red";
+			function changeColor(){
+				if(currentColor == "red"){
+					document.body.style.color = "green";
+					currentColor = "green";
+				}else{
+					document.body.style.color = "red" ;
+					currentColor = "red";
+				}
+				return curentColor ;
+			}
+		
+		</script>
+	</body>
+</html>
+
+<!-- 
+Learnings
+
+Use double quotes for strings like red ,green.
+Use single quotes for value inside document.getElementById()
+-->
